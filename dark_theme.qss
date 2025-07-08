@@ -1,0 +1,165 @@
+/* style.qss - Folha de Estilos para o App Atomos */
+
+QWidget {
+    background-color: #080717; /* Fundo principal super escuro */
+    color: #e0e0e0; /* Cor do texto principal */
+    font-family: "Segoe UI", "Calibri", "Helvetica", sans-serif;
+    font-size: 10pt;
+}
+
+QMainWindow {
+    background-color: #1a1a1a;
+}
+
+/* Estilo das "cartas" ou frames principais */
+QFrame#Card {
+    background-color: #161335;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+QLabel {
+    background-color: transparent;
+    padding-left: 5px;
+}
+
+QLabel#HeaderLabel {
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 10px;
+    color: #f0f0f0;
+}
+
+QPushButton {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #666;
+}
+
+QPushButton:pressed {
+    background-color: #444;
+}
+
+/* Botão de ação principal (Play) */
+QPushButton#AccentButton {
+    background-color: #e0218a; /* Rosa/Magenta da imagem */
+    color: #ffffff;
+    font-size: 11pt;
+}
+
+QPushButton#AccentButton:hover {
+    background-color: #f0329a;
+}
+
+QPushButton#AccentButton:pressed {
+    background-color: #c0117a;
+}
+
+QLineEdit, QComboBox, QPlainTextEdit, QTextEdit {
+    background-color: #252525;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 5px;
+    color: #e0e0e0;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(none); /* Opcional: remove a seta padrão */
+}
+
+/* Abas */
+QTabWidget::pane {
+    border: none;
+}
+
+QTabBar::tab {
+    background-color: transparent;
+    color: #aaa;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    margin-right: 5px;
+}
+
+QTabBar::tab:hover {
+    color: #fff;
+}
+
+QTabBar::tab:selected {
+    color: #e0e0e0;
+    border-bottom: 2px solid #e0218a; /* Linha rosa na aba selecionada */
+}
+
+/* Tabelas (substituto do Treeview) */
+QTableWidget {
+    background-color: #2c2e3a;
+    border: 1px solid #444;
+    gridline-color: #444;
+}
+
+QHeaderView::section {
+    background-color: #3a3c4a;
+    color: #f0f0f0;
+    padding: 4px;
+    border: 1px solid #444;
+    font-weight: bold;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    border: none;
+    background: #2c2e3a;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle {
+    background: #555;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    height: 0px;
+    width: 0px;
+}
+
+QFrame#AnalysisNavContainer {
+    background-color: #252525;
+}
+QListWidget#AnalysisNavList {
+    background-color: transparent;
+    border: none;
+    font-size: 11pt;
+}
+QListWidget#AnalysisNavList::item {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    color: #e0e0e0;
+}
+QListWidget#AnalysisNavList::item:selected {
+    background-color: #e0218a;
+    color: white;
+}
+QListWidget#AnalysisNavList::item:!selected:hover {
+    background-color: #4a4c5a;
+}
+QPushButton#ToggleButton {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+QPushButton#ToggleButton:hover {
+    background-color: #4a4c5a;
+}
